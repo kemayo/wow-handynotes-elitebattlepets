@@ -1,0 +1,14 @@
+## Interface: 60200
+## Title: HandyNotes_EliteBattlePets
+## Notes: Elite Battle Pets? Legendary? Sure, why not?
+## Author: Kemayo
+## Version: 1
+## DefaultState: enabled
+## X-Category: Map
+## X-eMail: kemayo @ gmail DOT com
+## SavedVariables: HandyNotes_EliteBattlePetsDB
+## RequiredDeps: HandyNotes
+
+handler.lua
+config.lua
+Pets.lua
