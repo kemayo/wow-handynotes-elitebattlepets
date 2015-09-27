@@ -4,7 +4,7 @@
 ## Author: Kemayo
 ## Version: 1
 ## DefaultState: enabled
-## X-Category: Map
+## X-Category: Battle Pets
 ## X-eMail: kemayo @ gmail DOT com
 ## SavedVariables: HandyNotes_EliteBattlePetsDB
 ## RequiredDeps: HandyNotes
