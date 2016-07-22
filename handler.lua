@@ -98,13 +98,13 @@ local function work_out_texture(point)
     end
     if point.follower then
         if not follower_texture then
-            local left, right, top, bottom = GetObjectIconTextureCoords(44)
+            local left, right, top, bottom = GetObjectIconTextureCoords(4738)
             follower_texture = {
-                icon = [[Interface\MINIMAP\OBJECTICONS]],
-                tCoordLeft = left + 0.018,
-                tCoordRight = right - 0.018,
-                tCoordTop = top + 0.018,
-                tCoordBottom = bottom - 0.018,
+                icon = [[Interface\Minimap\ObjectIconsAtlas]],
+                tCoordLeft = left + 0.008,
+                tCoordRight = right - 0.008,
+                tCoordTop = top + 0.008,
+                tCoordBottom = bottom - 0.008,
                 r = 0,
                 g = 1,
                 b = 0,
@@ -114,25 +114,29 @@ local function work_out_texture(point)
     end
     if point.npc then
         if not npc_texture then
-            local left, right, top, bottom = GetObjectIconTextureCoords(41)
+            local left, right, top, bottom = GetObjectIconTextureCoords(4707)
             npc_texture = {
-                icon = [[Interface\MINIMAP\OBJECTICONS]],
-                tCoordLeft = left + 0.018,
-                tCoordRight = right - 0.018,
-                tCoordTop = top + 0.018,
-                tCoordBottom = bottom - 0.018,
+                icon = [[Interface\Minimap\ObjectIconsAtlas]],
+                tCoordLeft = left + 0.008,
+                tCoordRight = right - 0.008,
+                tCoordTop = top + 0.005,
+                tCoordBottom = bottom - 0.008,
             }
         end
         return npc_texture
     end
     if not default_texture then
-        local left, right, top, bottom = GetObjectIconTextureCoords(34)
+        local left, right, top, bottom = GetObjectIconTextureCoords(4672)
         default_texture = {
-            icon = [[Interface\MINIMAP\OBJECTICONS]],
-            tCoordLeft = left + 0.018,
-            tCoordRight = right - 0.018,
-            tCoordTop = top + 0.018,
-            tCoordBottom = bottom - 0.018,
+            icon = [[Interface\Minimap\ObjectIconsAtlas]],
+            -- tCoordLeft = left,
+            -- tCoordRight = right,
+            -- tCoordTop = top,
+            -- tCoordBottom = bottom,
+            tCoordLeft = left + 0.005,
+            tCoordRight = right - 0.005,
+            tCoordTop = top + 0.005,
+            tCoordBottom = bottom - 0.005,
         }
     end
     return default_texture
