@@ -98,45 +98,38 @@ local function work_out_texture(point)
     end
     if point.follower then
         if not follower_texture then
-            local left, right, top, bottom = GetObjectIconTextureCoords(4738)
+            local texture, _, _, left, right, top, bottom = GetAtlasInfo("GreenCross")
             follower_texture = {
-                icon = [[Interface\Minimap\ObjectIconsAtlas]],
-                tCoordLeft = left + 0.008,
-                tCoordRight = right - 0.008,
-                tCoordTop = top + 0.008,
-                tCoordBottom = bottom - 0.008,
-                r = 0,
-                g = 1,
-                b = 0,
+                icon = texture,
+                tCoordLeft = left,
+                tCoordRight = right,
+                tCoordTop = top,
+                tCoordBottom = bottom,
             }
         end
         return follower_texture
     end
     if point.npc then
         if not npc_texture then
-            local left, right, top, bottom = GetObjectIconTextureCoords(4707)
+            local texture, _, _, left, right, top, bottom = GetAtlasInfo("DungeonSkull")
             npc_texture = {
-                icon = [[Interface\Minimap\ObjectIconsAtlas]],
-                tCoordLeft = left + 0.008,
-                tCoordRight = right - 0.008,
-                tCoordTop = top + 0.005,
-                tCoordBottom = bottom - 0.008,
+                icon = texture,
+                tCoordLeft = left,
+                tCoordRight = right,
+                tCoordTop = top,
+                tCoordBottom = bottom,
             }
         end
         return npc_texture
     end
     if not default_texture then
-        local left, right, top, bottom = GetObjectIconTextureCoords(4672)
+        local texture, _, _, left, right, top, bottom = GetAtlasInfo("WildBattlePet")
         default_texture = {
-            icon = [[Interface\Minimap\ObjectIconsAtlas]],
-            -- tCoordLeft = left,
-            -- tCoordRight = right,
-            -- tCoordTop = top,
-            -- tCoordBottom = bottom,
-            tCoordLeft = left + 0.005,
-            tCoordRight = right - 0.005,
-            tCoordTop = top + 0.005,
-            tCoordBottom = bottom - 0.005,
+            icon = texture,
+            tCoordLeft = left,
+            tCoordRight = right,
+            tCoordTop = top,
+            tCoordBottom = bottom,
         }
     end
     return default_texture
