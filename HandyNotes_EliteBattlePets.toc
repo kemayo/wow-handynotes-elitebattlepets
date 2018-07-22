@@ -1,4 +1,4 @@
-## Interface: 70000
+## Interface: 80000
 ## Title: HandyNotes_EliteBattlePets
 ## Notes: Elite Battle Pets? Legendary? Sure, why not?
 ## Author: Kemayo
