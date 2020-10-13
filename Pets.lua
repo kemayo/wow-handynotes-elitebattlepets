@@ -14,7 +14,7 @@ ns.points = {
         },
     },
     --]]
-    ["TanaanJungle"] = {
+    [534] = {
         [26143160] = { quest=39157, label="Felsworn Sentry", },
         [15744444] = { quest=39168, label="Bleakclaw", },
         [75453736] = { quest=39173, label="Defiled Earth", },
